@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+.task-content {
+  overflow: auto; 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+.task-butt button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+@keyframes TaskIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.task {
+  animation: TaskIn 1s ease-in-out;
+  max-width: 200px;
+  min-width: 200px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  height:200px;
+  margin: 5px; 
+  
+}
+
+.task-transition-enter {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.task-transition-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.task-transition-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.task-transition-exit-active {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.task-list {
+  display: flex;
+  flex-wrap: wrap;   
+  gap: 20px;    
+  justify-content: flex-start;
+}
+
+
+.text {
+  width: 100%;
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+  white-space: normal;
+  
+  
+}
+
+.text h4 {
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-bottom: 10px;
+
+
+}
+
+.task-text{
+  max-height: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+
+.Tasks{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.MainBut{
+ display: flex;
+  justify-content: end;
+  margin: 25px;
+}
+
+.Tasks{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.image-button {
+  color: white; 
+  background-color: black;
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%; 
+  font-size: 40px;
+  display: flex;
+  justify-content: center; 
+  align-items:center; 
+  border: none; 
+  cursor: pointer;
+  position: relative;
+}
+
+.image-button span {
+  position: relative;
+  top: -4px; 
+}
+
+.container{
+  width: 100%;
+  max-width: 1000px; 
+  display:flex;
+  justify-content: center; 
+  align-items: center;
+  min-height: 70vh;
+  
+}

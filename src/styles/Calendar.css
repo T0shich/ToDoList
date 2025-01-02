@@ -1,0 +1,55 @@
+.calendar {
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  width: 320px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.header button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background: #0056b3;
+}
+
+.weekdays,
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.weekday,
+.day {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.day {
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.day.today {
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.day.empty {
+  visibility: hidden;
+}

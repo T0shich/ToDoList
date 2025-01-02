@@ -1,0 +1,38 @@
+.model{
+   position: fixed;
+    width: 350px;
+    height: 350px;
+    top: calc(50% - 175px);
+    left: calc(50% - 175px);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    cursor: default;
+    padding: 40px 20px;
+    border: 2px solid rgb(232, 238, 232);
+     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); 
+     z-index: 9999;
+}
+
+.modal_content {
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+   
+
+}
+
+.modal_message {
+  margin: 10px 0 20px 0; 
+  padding-top: 60px;
+  font-size: 16px;
+  color: #555;
+  text-align: center; 
+  font-size: 20px;
+}
+.ModalBut{
+   margin-top: 80px;
+  padding: 8px 16px;
+    cursor: pointer;
+
+}
+
