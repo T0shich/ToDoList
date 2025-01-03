@@ -6,7 +6,6 @@
 
 
 
-
 .task-content {
   overflow: auto; 
   word-wrap: break-word;
@@ -108,8 +107,9 @@
 }
 
 .MainBut{
- display: flex;
+  display: flex;
   justify-content: end;
+
   margin: 25px;
 }
 
@@ -148,4 +148,23 @@
   align-items: center;
   min-height: 70vh;
   
+}
+
+
+img{
+  padding: 3px;
+  width: 40px;
+  height: 40px;
+}
+
+
+.AppContainer {
+  display: flex;
+  justify-content: space-between; /* элементы по горизонтали */
+  
+}
+
+.MainContent {
+  flex: 1; /* Остальная часть экрана будет занимать основной контент */
+  padding: 20px;
 }
