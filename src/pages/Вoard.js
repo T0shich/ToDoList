@@ -47,14 +47,14 @@ function Board() {
 
 	return (
 		<div className='Board'>
-			<footer>
+			<header>
 				<div className='MainBut'>
 					<button className='image-button' onClick={openModal}>
 						<span>+</span>
 					</button>
 				</div>
-			</footer>
-
+			</header>
+			<h2 style={{ textAlign: 'center' }}>Добавьте задачу</h2>
 			<div className='container'>
 				<div className='Tasks'>
 					{isModalOpen && (

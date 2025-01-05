@@ -1,0 +1,47 @@
+.main_input input {
+  width: 90%;
+  margin: 10px 0px 10px 0px; 
+ 
+}
+.main_input button {
+  flex-shrink: 0; /* Кнопка не сжимается */
+}
+
+/* Контейнер для задач */
+.task-container {
+  display: flex;
+  flex-direction: column;  /* Размещение задач в колонку */
+  gap: 10px; /* Промежуток между задачами */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Стили для каждой задачи */
+.task-item {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  padding: 12px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+  background-color: #f1f1f1;  /* Фон при наведении */
+}
+
+/* Кнопка завершения задачи */
+.task-item button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-item button:hover {
+  background-color: #218838; /* Тёмно-зелёный при наведении */
+}
