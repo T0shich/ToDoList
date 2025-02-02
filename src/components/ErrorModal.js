@@ -1,5 +1,5 @@
 import React from 'react'
-
+import UniversalButton from './UniversalButton'
 const ErrorModal = ({ message, onClose }) => {
 	return (
 		<div className='top'>
@@ -10,7 +10,7 @@ const ErrorModal = ({ message, onClose }) => {
 						<p>{message}</p>
 					</div>
 					<div className='ModalBut'>
-						<button onClick={onClose}>Закрыть</button>
+						<UniversalButton onClick={onClose}>Закрыть</UniversalButton>
 					</div>
 				</div>
 			</div>

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import UniversalButton from './UniversalButton'
 const ToDoList = ({
 	input,
 	setInput,
@@ -16,13 +16,13 @@ const ToDoList = ({
 					type='text'
 					placeholder='Напишите задачу'
 				/>
-				<button onClick={addTask}>Добавить</button>
+				<UniversalButton onClick={addTask}>Добавить</UniversalButton>
 			</div>
 			<div className='task-container'>
 				{todolist.map((task, index) => (
 					<div key={index} className='task-item'>
 						<span>{task.text}</span>
-						<button onClick={() => completeTask(index)}>+</button>
+						<button onClick={() => completeTask(index)}>-</button>
 					</div>
 				))}
 			</div>

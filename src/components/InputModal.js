@@ -1,5 +1,5 @@
 import React from 'react'
-
+import UniversalButton from './UniversalButton'
 const InputModal = ({
 	title,
 	text,
@@ -27,8 +27,8 @@ const InputModal = ({
 					/>
 				</div>
 				<div className='ModalBut'>
-					<button onClick={addNewTask}>Создать задачу</button>
-					<button onClick={onClose}>Закрыть</button>
+					<UniversalButton onClick={addNewTask}>Создать задачу</UniversalButton>
+					<UniversalButton onClick={onClose}>Закрыть</UniversalButton>
 				</div>
 			</div>
 		</div>

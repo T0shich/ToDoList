@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link} from 'react-router-dom'
-
+import UniversalButton from './UniversalButton'
 const Sidebar = ({ isOpen, toggleSidebar }) => {
 	return (
 		<div className={`sidebar ${isOpen ? 'open' : ''}`}>
-			<button onClick={toggleSidebar} className='close-btn'>
+			<UniversalButton onClick={toggleSidebar} className='close-btn'>
 				&times;
-			</button>
+			</UniversalButton>
 			<ul>
 				<li>
 					<Link  to='/board'>Доска задач</Link>
